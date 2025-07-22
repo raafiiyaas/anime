@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demon Slayer - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <img src="img/download (6).jpg" class="logo" alt="Demon Slayer Logo">
+    <button class="nav-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="character.html">Characters</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section class="home">
+    <div class="home-content">
+      <h1 class="fade-in">DEMON SLAYER</h1>
+      <p class="fade-in delay-1">
+        Demon Slayer is a breathtaking action-fantasy anime following Tanjiro Kamado, 
+        a kind-hearted boy who becomes a demon slayer after his family is slaughtered 
+        and his sister Nezuko is turned into a demon. With stunning animation from 
+        Ufotable and an emotionally gripping story, Demon Slayer has become one of 
+        the most popular anime worldwide.
+      </p>
+      <a href="about.html" class="btn fade-in delay-2">Learn More</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Demon Slayer Fansite. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Navbar scroll effect
+    window.addEventListener('scroll', function() {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile menu toggle
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      document.getElementById('nav-links').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
